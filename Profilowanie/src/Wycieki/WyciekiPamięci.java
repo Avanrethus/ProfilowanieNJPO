@@ -1,7 +1,7 @@
 package Wycieki;
 import java.util.Map;
 public class WyciekiPamięci {
-    public final String key;
+    public String key;
     
     public WyciekiPamięci(String key){
         this.key = key;
