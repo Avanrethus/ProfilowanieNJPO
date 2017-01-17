@@ -1,14 +1,21 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Wycieki;
-
-/**
- *
- * @author Windows
- */
+import java.util.Map;
 public class WyciekiPamięci {
+    public final String key;
     
+    public WyciekiPamięci(String key){
+        this.key = key;
+    }
+    public static void main(String args[]){
+        try{
+            Map map = System.getProperties();
+            
+            for(;;){
+                map.put(new WyciekiPamięci("key"), "value");
+            }
+        }
+        catch(Exception e){
+            e.printStackTrace();
+        }
+    }
 }
