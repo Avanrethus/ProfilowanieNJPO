@@ -15,6 +15,7 @@ public class Watek implements Runnable {
         String plik = name;
         FileOutputStream fos = new FileOutputStream(plik);
         fos.write(tablicabyte);
+        fos.close();
     }
     @Override
     public void run() {
